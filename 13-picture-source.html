@@ -1,1 +1,42 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>픽처와 소스 요소</title>
+</head>
+<body>
+    
+
+
+     <picture>
+        <source media="(min-width: 650px)" srcset="https://googlechrome.github.io/samples/picture-element/images/kitten-large.png">
+        <source media="(min-width: 465px)" srcset="https://googlechrome.github.io/samples/picture-element/images/kitten-medium.png">
+        <!-- img tag for browsers that do not support picture element -->
+        <img src="https://googlechrome.github.io/samples/picture-element/images/kitten-small.png" alt="a cute kitten">
+      </picture>
+
+</body>
+</html>
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+### ****임베디드(Embedded) 요소****
+
+HTML 문서에 포함(embedded) 할 수 있는 콘텐츠 요소로  <img>, <video>, <audio>, <iframe>, <map> 등이 있습니다.
+
+<picture></picture> 안에는 <img src="" alt="" /> 가 꼭 있어야한다
+
+
+비트맵과 벡터의 차이
+
+
+비트맵 이미지는 이미지의 각 픽셀에 해당하는 색상 정보를 저장합니다. 반면에 벡터 이미지는 이미지를 구성하는 선, 곡선, 도형과 같은 기본 도형의 모양과 속성을 저장
+
+
+
+srcset="images/netflix@1x.webp 1x, images/netflix@2x.webp 2x"
+
+사용자 환경에 맞게 픽셀을 조정해주세요 이런 의미이다 그렇기에 src 는 꼭 있어야한다
