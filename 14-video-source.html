@@ -1,1 +1,48 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비디오와 소스 요소</title>
+</head>
+<body>
+    
+    <figure>
+        <video class="fullsize" poster="video/poster.jpg" controls autoplay muted>
+          <source src="video/google-developer-stories.mp4" type="video/mp4" />
+          <source src="video/google-developer-stories.mov" type="video/mov" />
+          <source src="video/google-developer-stories.ogg" type="video/ogg" />
+          <source src="video/google-developer-stories.webm" type="video/webm" />
+          <track src="video/google-developer-stories-subtitles-en.vtt" 
+                 kind="captions" srclang="en" label="English Caption" />
+        </video>   
+        <figcaption>구글 개발자 이야기</figcaption>
+      </figure>
+
+</body>
+</html>
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+
+video 에 poster 속성은 비디오가 작성하지않을때 나와달라 이거다
+
+type 에 확장명을 알맞게 써줘야한다
+
+
+track = 자막
+srclang = 언어 자막
+
+
+자동재생이 안되는 이유는 브라이저에서 막아놔서 !  그리고 소리가 겹치니까 
+
+이때는 autoplay muted 속성을 넣어주는게 좋다
+
+
+
+
+
+
+
