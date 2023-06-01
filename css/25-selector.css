@@ -1,1 +1,41 @@
 /* CSS 선택자(Selector) */
+  
+/* 전체 선택자 */
+* {
+    color: inherit;
+  }
+  
+  
+  /* 태그 선택자 */
+  body {
+    font-family: "SUIT";
+    font-weight: 300;
+    background-color: #000;
+    color: hsla(110, 100%, 100%, 1);
+    margin: 0;
+  }
+
+  /* 클래스 선택자 (동일한 스타일을 여러번 선택하고 싶을때) */
+
+  .fancy {
+    font-weight: bold;
+    text-shadow: 4px 4px 3px #77f;
+  }
+
+
+ 
+  ul.menu{
+	margin: 0;
+	padding-left: 0;
+    color: red;
+}
+
+/* ul태그에 띄어쓰기를 한다면 ul 태그 아래에 자식요소들 중 menu 클래스를 찾아서 하라는 의미다 
+잘 알아보기 */
+
+/* 아이디 선택자  */
+/* . 이 붙어있으면 class를 찾는거고 # 이붙어있으면 아이디를 찾는거다 */
+
+#demo {
+    border: red 5px solid;
+  }
