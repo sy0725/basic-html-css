@@ -1,4 +1,33 @@
+
+/* 상속되는 값이 있고 없는 값이 있다 
+ex) 폰트는 상속이되고 border은 상속이 안됀다*/
+
+
+/* 위에 있는 선택자는 아래 있는 선택자보다 힘이 쌔다 . 그이유는 선택자를 하나만 쓴게 아니고 두개를 써서 */
+
 body {
   font-family: "SUIT";
-  font-weight: 300;
+  font-weight: 700;
 }
+
+.menu{
+  color:skyblue;
+  font-size: 36px;
+  border:5px green dashed
+}
+
+
+.menu .pick{
+  background-color: pink !important;
+}
+
+
+.menu li{
+  background-color: yellow !important;      /* !important 는 막쓰면 안된다 왜 우선순위가 뭐가 문제인거지 이때 쓴다*/
+}
+
+
+.menu a{
+  color: inherit;
+}
+
