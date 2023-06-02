@@ -6,17 +6,20 @@ html {
 body {
   font-size: 1rem;
   font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 900;
+  font-family: 'Noto Sans KR', serif;
 }
 
 h1 {
   font-size: 3em;
 }
 
+div {
+  font-size: 4px;
+}
+
+
 p {
-  font-size: 2em;
-  line-height: 1.5em;
-  font-weight: 100;
+  line-height: 1.5;
 }
 
 
